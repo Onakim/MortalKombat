@@ -18,7 +18,7 @@ const player2 = {
     },
 };
 
-function createPlayer(playerClass, player1) {
+function createPlayer(playerClass, player1, lifeHP) {
     const player = document.createElement('div');
     const progress = document.createElement('div');
     const character = document.createElement('div');
@@ -36,9 +36,9 @@ function createPlayer(playerClass, player1) {
     progress.appendChild(life);
     progress.appendChild(name);
     character.appendChild(img);
-    life.style.width = player1.hp + '%';
+    life.style.width = lifeHP + '%';
     name.innerText = player1.name;
     img.src = player1.img
 };
-createPlayer('player1', player1);
-createPlayer('player2', player2);
+createPlayer('player1', player1, 20);
+createPlayer('player2', player2, 30);
