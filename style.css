@@ -47,8 +47,8 @@ body {
     background-repeat: no-repeat;
     top: 0;
     z-index: 100;
-    left: 50%;
-    transform: translate(-450px, 0px);
+    left: 20%;
+/*    transform: translate(-450px, 0px);*/
 }
 
 .wall-right {
@@ -188,6 +188,7 @@ body {
 
 .player2 .character {
     right: 60px;
+    left: 60px;
 }
 
 .player2 .character img {
@@ -209,3 +210,16 @@ body {
     width: 100%;
 }
 
+.loseTitle {
+    margin-top: 113px;
+    color: white;
+    position: absolute;
+    left: 50%;
+}
+
+.button {
+    margin-top: 150px;
+    left: 46%;
+    position: absolute;
+    z-index: 999;
+}
